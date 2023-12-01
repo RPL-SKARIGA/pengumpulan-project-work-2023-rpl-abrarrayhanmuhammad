@@ -1,0 +1,156 @@
+body {
+    padding-top: 60px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    }
+    
+    .navbar {
+    background-color: #041C32;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    }
+    
+    .navbar-brand {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    }
+    
+    .navbar-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    }
+    
+    .navbar-links li {
+    display: inline;
+    }
+    
+    .navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    }
+    
+    .navbar-dropdown {
+    position: relative;
+    }
+    
+    .navbar-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #041C32;
+    min-width: 100px;
+    z-index: 1;
+    }
+    
+    .navbar-dropdown:hover .navbar-dropdown-content {
+    display: block;
+    }
+    
+    .navbar-dropdown-content a {
+    padding: 10px;
+    display: block;
+    }
+    
+    /* Gaya untuk kotak pencarian */
+    .navbar-search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    /* Memindahkan kotak pencarian ke sisi kanan */
+    }
+    
+    #search-input {
+    width: 0;
+    opacity: 0;
+    border: none;
+    background: transparent;
+    color: #fff;
+    transition: width 0.3s ease, opacity 0.3s ease;
+    font-size: 16px;
+    padding: 5px;
+    margin-right: 10px;
+    }
+    
+    #search-button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    }
+    
+    /* Gaya untuk kotak pencarian yang aktif */
+    .navbar-search.active #search-input {
+    width: 200px;
+    /* Sesuaikan lebar sesuai kebutuhan */
+    opacity: 1;
+    }
+    
+    .navbar-search.active #search-button {
+    display: none;
+    /* Sembunyikan tombol saat kotak pencarian aktif */
+    }
+    
+    /* CSS untuk sidebar */
+    .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    background-color: #041C32;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: #fff;
+    }
+    
+    .sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    }
+    
+    .sidebar .logout {
+    margin-top: 100%;
+    }
+    
+    .sidebar h3 {
+    padding: 0px 25px 15px;
+    margin-top: -45px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    }
+    
+    .sidebar a:hover {
+    background-color: #064663;
+    }
+    
+    .sidebar.open {
+    left: 0;
+    /* Munculkan sidebar ketika kelas 'open' ditambahkan */
+    }
+    
+    /* CSS untuk konten halaman utama */
+    .content {
+    margin-left: 250px;
+    /* Sesuaikan margin dengan lebar sidebar */
+    margin-top: -50px;
+    }
+    

@@ -1,0 +1,64 @@
+/* Ubah ukuran border */
+.video-container {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 800px; /* Lebar maksimum kontainer video pada layar laptop */
+    float: left;
+}
+
+
+/* Ukuran video pada layar laptop */
+video {
+    width: 100%; /* Sesuaikan ukuran video dengan lebar kontainer */
+    height: auto; /* Otomatis sesuaikan tinggi video */
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+}
+
+.card-body {
+    padding: 15px;
+}
+
+video {
+    max-width: 100%;
+}
+/* style/style.css */
+body {
+    padding-top: 60px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+
+.header {
+    background-color: #041C32; 
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header-brand {
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+.header-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-left: 10px;
+}

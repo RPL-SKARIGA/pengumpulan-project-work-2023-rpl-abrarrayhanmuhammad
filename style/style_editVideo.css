@@ -1,0 +1,132 @@
+body {
+    padding-top: 60px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    }
+    
+    #search-button {
+    margin-left: 10px;
+    /* Menggeser tombol ke kanan dari teks "DAFTAR VIDEO" */
+    }
+    
+    .navbar-search {
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 65px;
+    /* Mengatur jarak dari kanan untuk kotak pencarian */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    #search-input {
+    width: 200px;
+    border: none;
+    outline: none;
+    padding: 5px;
+    }
+    
+    
+    /* CSS untuk sidebar */
+    .sidebar {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    background-color: #041C32;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    color: #fff;
+    }
+    
+    .sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    }
+    
+    .sidebar .logout {
+    margin-top: 100%;
+    }
+    
+    .sidebar h3 {
+    padding: 0px 25px 15px;
+    margin-top: -45px;
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+    }
+    
+    .sidebar a:hover {
+    background-color: #064663;
+    }
+    
+    .sidebar.open {
+    left: 0;
+    /* Munculkan sidebar ketika kelas 'open' ditambahkan */
+    }
+    
+    /* CSS untuk konten halaman utama */
+    .content {
+    margin-left: 250px;
+    /* Sesuaikan margin dengan lebar sidebar */
+    margin-top: -50px;
+    display: flex;
+    flex-wrap: wrap;
+    /* Menambahkan flexbox untuk mengatur layout */
+    }
+    
+    .video-card {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    
+    .video-card img {
+    max-width: 100%;
+    height: auto;
+    }
+    
+    .video-card h5 {
+    font-size: 18px;
+    margin: 10px 0;
+    }
+    
+    .video-card p {
+    /* Gaya awal untuk deskripsi */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-height: 3em;
+    /* Sesuaikan dengan ketinggian yang Anda inginkan */
+    }
+    
+    .video-card .show-more {
+    cursor: pointer;
+    color: blue;
+    }
+    
+    /* Menyesuaikan lebar kolom deskripsi */
+    table {
+    table-layout: fixed;
+    width: 100%;
+    }
+    
+    th:nth-child(3),
+    td:nth-child(3) {
+    width: 40%;
+    /* Sesuaikan dengan lebar yang diinginkan */
+    }
+    
